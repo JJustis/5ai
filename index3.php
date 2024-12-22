@@ -419,9 +419,8 @@ class ChatInterface {
             await bot.initialize();
         }
 
-        await this.loadBotList();
         this.selectedBots.add('simple_ai');
-        this.updateBotList();
+        await this.loadBotList();
     }
 
     async loadBotList() {
